@@ -1,9 +1,16 @@
 version: '3'
 services:
+   # Server to host our test environment.
    webserver:
+      # Custom image based off of nginx. See ./nginx/Dockerfile
       build: ./nginx
+
+      # Expose the http port.
       ports:
          - 80:80
+
+      # Mount the working directory read-only to /wd.
+      # A custom dockerfile sets up the nginx html folder to /wd/html
       volumes:
          - .:/wd:ro
 
