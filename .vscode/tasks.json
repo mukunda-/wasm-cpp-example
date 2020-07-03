@@ -1,0 +1,19 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			// Build the client in debug mode.
+			"label":   "Build Client Debug",
+			"type":    "shell",
+			"command": "python3",
+			"args": [
+				"./build.py"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": "$gcc",
+		}
+	]
+}

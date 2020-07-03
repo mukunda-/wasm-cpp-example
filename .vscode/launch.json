@@ -1,0 +1,39 @@
+{
+   // Use IntelliSense to learn about possible attributes.
+   // Hover to view descriptions of existing attributes.
+   // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+   "version": "0.2.0",
+   "configurations": [
+      {
+         "name":          "Debug Client",
+         "type":          "chrome",
+         "request":       "launch",
+         "url":           "http://localhost",
+         "preLaunchTask": "Build Client Debug",
+         //---------------------------------------------------------------------
+         // You can use Chrome for Developers like this:
+         //"runtimeExecutable": "C:\\Program Files\\Google\\Chrome Dev\\Application\\chrome.exe",
+         //"runtimeArgs": [
+         //   // Disable extensions and user profile.
+         //   "--guest",
+         //   // Open devtools on startup.
+         //   "--auto-open-devtools-for-tabs"
+         //],
+         //---------------------------------------------------------------------
+         // Not 100% sure how this works but here are my thoughts:
+         // When building in workspace/build/client/debug, the path to the
+         // source file will be for example "../../../src/client/main.cpp"
+         //
+         // When Chrome loads our sourcemap at
+         // "//localhost/wd/build/client/debug/wasm-cpp-example.wasm.map"
+         // it will use that same path to find the source files, so we should
+         // specify the path to there.
+         //
+         // And to clarify, this is for us (vscode), not Chrome. If we're
+         // running vs code remote to WSL, then it will still map correctly.
+         // Without this, vscode won't know where to look for files when
+         // debugging.
+         "webRoot": "${workspaceFolder}/build/client/debug",
+      }
+   ]
+}

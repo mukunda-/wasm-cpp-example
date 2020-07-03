@@ -1,0 +1,9 @@
+version: '3'
+services:
+   webserver:
+      build: ./nginx
+      ports:
+         - 80:80
+      volumes:
+         - .:/wd:ro
+
