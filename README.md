@@ -11,7 +11,5 @@ I personally recommend not getting into debugger setup too much until tooling
 is more mature. All of this is very new stuff, and the example here will
 perhaps fall out of date quickly.
 
-Read more in my blog article:
-
-Follow me on Twitter: [@_mukunda](https://twitter.com/_mukunda)
+Follow me [@_mukunda](https://twitter.com/_mukunda)
 
