@@ -11,5 +11,6 @@ I personally recommend not getting into debugger setup too much until tooling
 is more mature. All of this is very new stuff, and the example here will
 perhaps fall out of date quickly.
 
-Follow me [@_mukunda](https://twitter.com/_mukunda)
+Blog post about this here: https://blog.mukunda.com/compiling-and-debugging-c-for-webassembly-in-visual-studio-code/
 
+Follow me [@_mukunda](https://twitter.com/_mukunda)
